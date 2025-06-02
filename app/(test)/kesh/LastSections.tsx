@@ -16,19 +16,39 @@ export default function LastSections() {
       ScrollTrigger.create({
         trigger: parent.current,
         start: "top 2%",
-        // end: "top 5%",
-        markers: true,
         scrub: false,
         onEnter() {
           gsap.to(parent.current, {
             visibility: "visible",
-            duration: 2,
+            duration: 1,
           });
+          gsap.fromTo(
+            ".ClientCard",
+            {
+              opacity: 0,
+              y: 100,
+              scale: 0.5,
+            },
+            {
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              duration: 0.7,
+              ease: "power4.inOut",
+              stagger: 0.05,
+            }
+          );
         },
         onLeaveBack() {
           gsap.to(parent.current, {
-            visibility: "hidden",
+            opacity: 0,
             duration: 2,
+            onComplete: () => {
+              gsap.to(parent.current, {
+                opacity: 1,
+                visibility: "hidden",
+              });
+            },
           });
         },
       });

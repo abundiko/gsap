@@ -57,7 +57,7 @@ export default function Projects({ children }: { children: ReactNode }) {
   return (
     <div className="relative">
       <div
-        className="absolute inset-0 bg-white h-full w-full z-0"
+        className="absolute inset-0 h-full w-full z-0"
         ref={projectsBg}
       />
       <div ref={projectsParent} className="h-screen py-10  overflow-x-clip z-1">

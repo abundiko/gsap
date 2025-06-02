@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Projects from "./Projects";
 import EndingText from "./EndingText";
 import LastSections from "./LastSections";
+import Tools from "./sections/Tools";
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
         <EndingText />
       </Projects>
       <LastSections />
+      <Tools />
     </Lenis>
   );
 }
