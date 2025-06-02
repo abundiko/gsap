@@ -28,14 +28,14 @@ export default function Hero() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-10 items-end">
         <div className="max-w-[500px]">
-          {/* <Copy> */}
+          <Copy>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In at,
               ipsam beatae nostrum fugiat ad est eveniet temporibus voluptas
               distinctio corporis dolores magni iste quas eaque error earum
               ipsum commodi, aut rerum tempore voluptatem. Assumenda incidunt,
             </p>
-          {/* </Copy> */}
+          </Copy>
         </div>
         <div />
         <div className="flex items-center gap-4 justify-end">

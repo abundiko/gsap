@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import React, { ComponentProps, useRef } from "react";
+import { useWindowSize } from "react-use";
 
 export default function Copy({
   children,
@@ -12,6 +13,7 @@ export default function Copy({
   children: React.ReactElement<ComponentProps<"div">>;
 }) {
   const ref = useRef<HTMLDivElement>(null);
+  const { width } = useWindowSize();
   useGSAP(
     () => {
       gsap.registerPlugin(SplitText, ScrollTrigger);
@@ -59,7 +61,7 @@ export default function Copy({
     },
     {
       scope: ref,
-      dependencies: [],
+      dependencies: [width],
     }
   );
 
