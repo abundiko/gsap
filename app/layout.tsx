@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Mona_Sans } from "next/font/google";
+import { Mona_Sans, Ultra } from "next/font/google";
 import "./globals.css";
+
+const arizonia = Ultra({
+  variable: "--font-arizonia",
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 const monaSans = Mona_Sans({
   variable: "--font-mona-sans",
@@ -21,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${monaSans.variable} ${monaSans.className} antialiased`}
+        className={`${monaSans.variable}  ${arizonia.className} ${arizonia.variable} antialiased`}
       >
         {children}
       </body>
