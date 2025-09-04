@@ -30,9 +30,9 @@ export default function AboutImage() {
         id="AboutImage"
         height={600}
         width={1000}
-        src={"/images/bh.jpg"}
+        src={"/images/wedding/3.jpg"}
         alt="Brawlhalla"
-        className="w-full aspect-[7/3] mt-10 object-cover scale-[1.2]"
+        className="w-full aspect-[7/3] mt-10 object-cover scale-[1.2] object-top"
       />
     </div>
   );

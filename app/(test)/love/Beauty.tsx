@@ -24,7 +24,7 @@ export default function Beauty() {
         <Image
           height={400}
           width={350}
-          src={"/images/kesh.jpg"}
+          src={"/images/wedding/2.jpg"}
           alt="Mr Kesh"
           className="aspect-[3/4] w-full object-cover border-8 border-red-950 grayscale"
         />

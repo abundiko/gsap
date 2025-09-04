@@ -36,7 +36,7 @@ export default function BigKesh() {
         id="BigKeshImage"
         height={400}
         width={350}
-        src={"/images/kesh.jpg"}
+        src={"/images/wedding/1.jpg"}
         alt="Mr Kesh"
         className="h-full w-full absolute object-cover border-8 border-red-950 grayscale z-10"
       />
