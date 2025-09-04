@@ -5,10 +5,10 @@ import { FaHeart } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="bg-[#f7f7f7] h-screen w-full text-gray-800">
+    <section className="bg-white h-screen w-full text-gray-800">
       <div className="grid grid-cols-7 items-stretch h-full relative">
         <div className="app-container py-14 col-span-4 flex flex-col justify-between">
-          <h1 className="font-bold text-[6.2vw] leading-[1] tracking-[2px]">
+          <h1 className="font-bold text-[6.2vw] leading-[120%] tracking-[2px]">
             Send{" "}
             <span className="text-transparent bg-gradient-to-br from-[#f61a1a] to-[#6c0405] [--webkit-background-clip:text] [background-clip:text]">
               Love
